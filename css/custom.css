@@ -1,0 +1,5 @@
+.gallery-group-main img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
