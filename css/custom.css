@@ -20,8 +20,8 @@
 
 /* ===== 2. 边缘竖线（侧边栏 / 主体边框）===== */
 body, .main-container, .sidebar, .wrapper {
-  border-right-color: #b050dc !important;
-  border-left-color: #b050dc !important;
+  border-right-color:transparent!important;
+  border-left-color:transparent!important;
 }
 
 /* ===== 3. 滚动条 ===== */
@@ -44,7 +44,7 @@ body, .main-container, .sidebar, .wrapper {
 }
 
 /* ===== 5. 底部区域 ===== */
-.footer-other, .aside-content {
+.footer-other{
   background-color: #b050dc !important;
-  border-color: #b050dc !important;
+  border-color:transparent!important;
 }
