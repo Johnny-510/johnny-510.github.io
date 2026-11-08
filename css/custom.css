@@ -26,3 +26,34 @@ body, .main-container, .sidebar, .wrapper {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #C8A2C8 !important;
 }
+
+/* 1. 导航栏“标签”图标、文字及下划线 */
+/* 针对当前激活项（如图中的标签）及悬停状态 */
+.nav-item a.active, 
+.nav-item a:hover {
+  color: #b050dc !important;
+  border-bottom-color: #b050dc !important;
+}
+/* 单独覆盖图标颜色（图中的蓝色菱形） */
+.nav-item a.active i, 
+.nav-item a:hover i {
+  color: #b050dc !important;
+}
+
+/* 2. 底部“Follow Me”按钮（GitHub关注按钮） */
+/* 覆盖按钮背景色和边框 */
+.github-btn .follow-btn, 
+.follow-me-btn {
+  background-color: #b050dc !important;
+  border-color: #b050dc !important;
+  color: #fff !important; /* 建议文字保持白色以保证对比度 */
+}
+/* 悬停时稍微加深（可选） */
+.github-btn .follow-btn:hover, 
+.follow-me-btn:hover {
+  background-color: #C8A2C8 !important;
+  border-color: #C8A2C8 !important;
+}
+
+/* 3. 统一颜色管理（配合之前聊的全局替换） */
+/* 如果你以后想换色，只需全文件替换 #b050dc 即可 */
