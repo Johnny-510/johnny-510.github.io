@@ -4,22 +4,27 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* 1. 修改导航栏底部/选中项的蓝色下划线（如“首页”下方） */
+/* ===== 1. 导航栏：选中项 + 悬停（文字 / 下划线 / 图标）===== */
 .navbar, .nav, .menu {
   border-color: #b050dc !important;
 }
-.navbar a.active, .menu a.active {
+.navbar a.active, .menu a.active,
+.site-page.active, .site-page:hover,
+.nav-item a.active, .nav-item a:hover {
+  color: #b050dc !important;
   border-bottom-color: #b050dc !important;
-  color: #b050dc !important; /* 可选：连字也变淡紫 */
+}
+.nav-item a.active i, .nav-item a:hover i {
+  color: #b050dc !important;
 }
 
-/* 2. 修改右侧边缘的蓝色竖线（可能是侧边栏、主体边框或滚动条） */
+/* ===== 2. 边缘竖线（侧边栏 / 主体边框）===== */
 body, .main-container, .sidebar, .wrapper {
   border-right-color: #b050dc !important;
   border-left-color: #b050dc !important;
 }
 
-/* 3. 顺便把滚动条也改成淡紫（很多主题的蓝条其实是滚动条） */
+/* ===== 3. 滚动条 ===== */
 ::-webkit-scrollbar-thumb {
   background-color: #b050dc !important;
 }
@@ -27,33 +32,19 @@ body, .main-container, .sidebar, .wrapper {
   background-color: #C8A2C8 !important;
 }
 
-/* 1. 导航栏“标签”图标、文字及下划线 */
-/* 针对当前激活项（如图中的标签）及悬停状态 */
-.nav-item a.active, 
-.nav-item a:hover {
-  color: #b050dc !important;
-  border-bottom-color: #b050dc !important;
-}
-/* 单独覆盖图标颜色（图中的蓝色菱形） */
-.nav-item a.active i, 
-.nav-item a:hover i {
-  color: #b050dc !important;
-}
-
-/* 2. 底部“Follow Me”按钮（GitHub关注按钮） */
-/* 覆盖按钮背景色和边框 */
-.github-btn .follow-btn, 
-.follow-me-btn {
+/* ===== 4. Follow Me 按钮 ===== */
+#card-info-btn {
   background-color: #b050dc !important;
   border-color: #b050dc !important;
-  color: #fff !important; /* 建议文字保持白色以保证对比度 */
+  color: #fff !important;
 }
-/* 悬停时稍微加深（可选） */
-.github-btn .follow-btn:hover, 
-.follow-me-btn:hover {
+#card-info-btn:hover {
   background-color: #C8A2C8 !important;
   border-color: #C8A2C8 !important;
 }
 
-/* 3. 统一颜色管理（配合之前聊的全局替换） */
-/* 如果你以后想换色，只需全文件替换 #b050dc 即可 */
+/* ===== 5. 底部区域 ===== */
+.footer-other, .aside-content {
+  background-color: #b050dc !important;
+  border-color: #b050dc !important;
+}
